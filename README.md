@@ -35,7 +35,7 @@ As imagens saem do código do Glove:
 ```sh
 git clone https://github.com/fabioaacarneiro/glove
 cd glove && cargo build --release -p glove-arte
-./target/release/glove-arte icones /caminho/para/glove-icones/Glove
+./target/release/glove-arte icones /caminho/para/glove-icons/Glove
 ```
 
 ## Licença
