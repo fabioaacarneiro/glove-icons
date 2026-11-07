@@ -15,7 +15,9 @@ or traced; Tiger's icons served only as a style reference. There are no trademar
 
 - 84 icons (apps, places, devices, file types, preferences, status), with the common
   freedesktop and GNOME names as aliases so other apps pick them up too.
-- Sizes 16, 22, 24, 32, 48, 64, 96, 128 and 256 px, plus 2× for HiDPI screens.
+- Sizes 16, 22, 24, 32, 48, 64, 96, 128 and 256 px, plus 2× for HiDPI screens (a 2× size that has
+  the same pixels as a 1× one is a link to it, so the theme stays small: about 4 MB).
+- Lossless PNGs with maximum compression.
 - Anything missing falls back to Adwaita and hicolor.
 
 ## Install
