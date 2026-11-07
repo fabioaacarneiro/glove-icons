@@ -1,43 +1,42 @@
-# Glove — tema de ícones
+# Glove icon theme
 
-Tema de ícones no padrão freedesktop com a linguagem visual do Mac OS X 10.4 Tiger:
-objetos com volume, um pouco de perspectiva, materiais (metal escovado, vidro, gel,
-couro, papel), luz de cima e sombra no formato do objeto.
+A freedesktop icon theme in the visual language of Mac OS X 10.4 Tiger: objects with
+volume, a touch of perspective, real materials (brushed metal, glass, gel, leather,
+paper), light from above and shadows shaped like the object.
 
-**Toda a arte é própria e desenhada por código** no [Glove](https://github.com/fabioaacarneiro/glove)
-(`crates/paint/src/tiger.rs` e `tiger_prefs.rs`). Nenhuma imagem da Apple foi usada,
-copiada ou traçada; os ícones do Tiger serviram só de referência de estilo. Não há
-marcas registradas (nada de rosto do Finder, bússola do Safari ou logotipo da maçã).
+**All artwork is original and drawn in code** by [Glove](https://github.com/fabioaacarneiro/glove)
+(`crates/paint/src/tiger.rs` and `tiger_prefs.rs`). No Apple artwork was used, copied
+or traced; Tiger's icons served only as a style reference. There are no trademarks
+(no Finder face, no Safari compass, no Apple logo).
 
-![Vitrine](vitrine.png)
+![Preview](preview.png)
 
-## Conteúdo
+## What's inside
 
-- 84 ícones (apps, lugares, aparelhos, tipos de arquivo, preferências, estados), com
-  os nomes comuns do freedesktop e do GNOME como atalhos, para os apps de fora também
-  usarem os desenhos.
-- Tamanhos 16, 22, 24, 32, 48, 64, 96, 128 e 256 pixels, e 2× para telas densas.
-- Herda do Adwaita e do hicolor o que não tiver.
+- 84 icons (apps, places, devices, file types, preferences, status), with the common
+  freedesktop and GNOME names as aliases so other apps pick them up too.
+- Sizes 16, 22, 24, 32, 48, 64, 96, 128 and 256 px, plus 2× for HiDPI screens.
+- Anything missing falls back to Adwaita and hicolor.
 
-## Instalar
+## Install
 
 ```sh
-./instalar.sh            # copia para ~/.local/share/icons/Glove
+./install.sh             # copies to ~/.local/share/icons/Glove
 ```
 
-Depois escolha **Glove** como tema de ícones (no GNOME: `gsettings set
-org.gnome.desktop.interface icon-theme Glove`; no Glove: Preferências › Aparência).
+Then pick **Glove** as your icon theme (GNOME: `gsettings set
+org.gnome.desktop.interface icon-theme Glove`; Glove: Preferences › Appearance).
 
-## Gerar de novo
+## Regenerate
 
-As imagens saem do código do Glove:
+The images are rendered from Glove's source code:
 
 ```sh
 git clone https://github.com/fabioaacarneiro/glove
 cd glove && cargo build --release -p glove-arte
-./target/release/glove-arte icones /caminho/para/glove-icons/Glove
+./target/release/glove-arte icones /path/to/glove-icons/Glove
 ```
 
-## Licença
+## License
 
-GPL-3.0-or-later, a mesma do Glove.
+GPL-3.0-or-later, same as Glove.
